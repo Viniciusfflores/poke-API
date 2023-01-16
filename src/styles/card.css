@@ -1,0 +1,97 @@
+#loading{
+    color: var(--color-grey-3);
+}
+.poke-ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+
+    width: 100%;
+    height: 200px;
+
+}
+.poke-card{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+
+    background: #343A40;
+    border-radius: 8px;
+}
+.poke-icone{
+    width: 60px;
+    height: 60px;
+}
+.poke-name{
+    font-weight: 500;
+    font-size: var(--text-1);
+    line-height: 26px;
+
+    color: var(--color-grey-2);
+}
+@media(min-width: 450px){
+    .poke-ul{
+        position: absolute;
+        bottom: 300px;
+
+        max-width: 400px;
+        width: 210px;
+        height: 210px;
+
+        top: 380px;
+        margin-left: 10px;
+
+        border: solid 1px var(--color-grey-3);
+        overflow-y: auto;
+
+        z-index: 3;
+        
+        background-color: rgb(23, 216, 23) ;
+    
+    }
+    .poke-ul::-webkit-scrollbar{
+        display: none;
+    }
+    .poke-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: flex-start;
+        width: 200px;
+        height: 400px;
+
+        background-color: rgba(0, 0, 255, 0.075);
+
+    }
+    .poke-icone{
+        width: 200px;
+        height: 200px;
+    }
+    .poke-name{
+        margin-top: -40px;
+        margin-bottom: 50px;
+        font-weight: 500;
+        font-size: var(--text-1);
+        line-height: 26px;
+    
+        color: var(--color-grey-2);
+    }
+
+    .pokedex{
+        position: relative;
+
+        width: 350px;
+        height: 700px;
+
+
+        z-index: 2;
+
+        background-image: url(/src/assets/pokedex1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}

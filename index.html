@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/styles/global.css">
+    <link rel="stylesheet" href="/src/styles/index.css">
+    <link rel="stylesheet" href="/src/styles/card.css">
+    <link rel="stylesheet" href="/src/styles/buttons.css">
+    <link rel="stylesheet" href="/src/styles/input.css">
+    <link rel="shortcut icon" href="src/assets/favicon.png" type="image/x-icon">
+    <title>Consumindo PokeAPI</title>
+  </head>
+
+  <body>
+    <header>
+      <img class="logo" src="/src/assets/pokeapi.png" alt="">
+      <div class="box-search">
+        <input class="input search-input" type="text" placeholder="Pesquisar por...">
+        <button class="bt-1 search-bt"></button>
+      </div>
+      
+    </header>
+    <main>
+      <div class="pokedex">
+      </div>
+      <ul class="poke-ul">
+        
+      </ul>
+      <span id="loading">Carregando...</span>
+    </main>
+
+  </body>
+
+  <script src="/src/scripts/requests.js"></script>
+  <script src="/src/scripts/index.js"></script>
+</html>

@@ -1,0 +1,17 @@
+.bt-1{
+    border-radius: 8px;
+
+    border: none;
+
+    background-color: var(--color-brand-1);
+
+    cursor: pointer;
+}
+
+.search-bt{
+    background-image: url(/src/assets/search-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 72px;
+    height: 52px;
+}
